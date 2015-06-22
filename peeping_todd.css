@@ -1,0 +1,20 @@
+@keyframes peep-in {
+	0% {
+		top: 100%;
+	}
+	25% {
+		top: 0;
+	}
+	75% {
+		top: 0;
+	}
+	100% {
+		top: 100%;
+	}
+}
+
+.peep-in {
+	animation-name: peep-in;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
