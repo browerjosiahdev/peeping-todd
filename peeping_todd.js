@@ -5,13 +5,6 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 
 var strPeepingTodd   = chrome.extension.getURL('peeping_todd.png');
 var arrPeepingImages = [];
-var arrIdCharacters  = [
-	'a', 'b', 'c', 'd', 'e', 'f', 'g',
-	'h', 'i', 'j', 'k', 'l', 'm', 'n',
-	'o', 'p', 'q', 'r', 's', 't', 'u',
-	'v', 'w', 'x', 'y', 'z'
-];
-var todds = '';
 
 function initialize() {
 	createPeepingTodd();
