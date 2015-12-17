@@ -8,7 +8,8 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 
 // Path to the peeping todd image.
 var _toddUrl = chrome.extension.getURL('peeping_todd.png'),
-    _aspect  = 0.9776;
+    _aspect  = 0.9776,
+		_delay   = 30000;
 
 /**
  * @method getValidImages
@@ -76,7 +77,7 @@ function createPeepingTodd() {
 			image.removeClass('peep-in');
 			image.addClass('peep-in');
 
-			setTimeout(createPeepingTodd, 8000);
+			setTimeout(createPeepingTodd, _delay);
 		});
 	}
 }
@@ -127,5 +128,5 @@ function generateId() {
 	});
 }
 
-// Wait five seconds before creating the first peeping todd.
-setTimeout(createPeepingTodd, 5000);
+// Delay beforing creating the first peeping todd.
+setTimeout(createPeepingTodd, _delay);
